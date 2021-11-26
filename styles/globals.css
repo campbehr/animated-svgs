@@ -1,16 +1,22 @@
+* {
+	font-size: 1rem;
+}
+
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	padding: 0;
+	margin: 0;
+	font-family: "Mochiy Pop P One", sans-serif;
+	font-size: calc(70% + 0.8vmin);
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+h1 {
+	font-size: 2.2rem;
+}
+h2 {
+	font-size: 1.6rem;
 }
 
-* {
-  box-sizing: border-box;
+h3 {
+	font-size: 1.3rem;
 }

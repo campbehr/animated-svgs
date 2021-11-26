@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Animated SVG Button</title>
+		<style>
+			:root {
+				--dark-color: #aa14f0;
+				--light-color: #c7a2d8;
+			}
+			svg {
+				cursor: pointer;
+			}
+
+			#dark {
+				fill: var(--dark-color);
+			}
+			#light {
+				fill: var(--light-color);
+			}
+
+			#dark1,
+			#dark2,
+			#light1 {
+				transition: all 1s ease;
+			}
+
+			#dark2 {
+				transform: translateX(-100%);
+			}
+
+			svg:hover #light1 {
+				transform: translateX(20%);
+			}
+			svg:hover #dark1 {
+				transform: translateX(40%);
+				opacity: 0;
+			}
+			svg:hover #dark2 {
+				transform: translateX(0%);
+			}
+		</style>
+	</head>
+	<body>
+		<svg
+			width="80"
+			height="40"
+			viewBox="0 0 209 138"
+			fill="none"
+			xmlns="http://www.w3.org/2000/svg"
+		>
+			<g
+				id="Frame 18"
+				clip-path="url(#clip0_755:110)"
+			>
+				<g id="light">
+					<path
+						id="light1"
+						opacity="0.85"
+						d="M78.5 64.6699C81.8333 66.5944 81.8333 71.4056 78.5 73.3301L18.5 107.971C15.1667 109.896 11 107.49 11 103.641L11 34.359C11 30.51 15.1667 28.1044 18.5 30.0289L78.5 64.6699Z"
+					/>
+				</g>
+				<g id="dark">
+					<path
+						id="dark2"
+						opacity="0.85"
+						d="M104.5 64.6699C107.833 66.5944 107.833 71.4056 104.5 73.3301L44.5 107.971C41.1667 109.896 37 107.49 37 103.641L37 34.359C37 30.51 41.1667 28.1044 44.5 30.0289L104.5 64.6699Z"
+					/>
+					<path
+						id="dark1"
+						opacity="0.85"
+						d="M139.5 64.6699C142.833 66.5944 142.833 71.4056 139.5 73.3301L79.5 107.971C76.1667 109.896 72 107.49 72 103.641L72 34.359C72 30.51 76.1667 28.1044 79.5 30.0289L139.5 64.6699Z"
+					/>
+				</g>
+			</g>
+			<defs>
+				<clipPath id="clip0_755:110">
+					<rect
+						width="209"
+						height="138"
+						fill="white"
+					/>
+				</clipPath>
+			</defs>
+		</svg>
+	</body>
+</html>
